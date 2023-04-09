@@ -8,17 +8,17 @@ The main difference between our package to other similar functions is that the f
 ## Installation
 
 1. Clone the git repository onto your local machine using:
-```bash
+```
 git clone https://github.com/DSCI-310/dsci-310-group-11-pkg.git
 ```
 
 2. Navigate to the local repository through the terminal (this may differ based on your home directory setups):
 ```
 cd dsci-310-group-11-pkg
-``
+```
 
 3. Run pip to install the package locally:
-```bash
+```
 $ pip install .
 ```
 
