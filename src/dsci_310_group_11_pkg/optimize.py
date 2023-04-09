@@ -10,18 +10,24 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 
 def hp_optimizer(model, X_train, y_train):
-    # DESCRIPTION: Maximizes model accuracy based on tuning hyperparameters of each model (respective if statements)
-    # ACTION: Loops over chosen hyperparemeters in a the scores_dict/param_grid dictionary
-    # and appends the mean cross validation score of each hyperparameter to the scores_dict dictionary
-    # INPUTS: model - an input string, referencing the specific model that the function should run.
-            # X_train - a dataframe object containing prediction features.
-            # y_train - a series object containing target variables.
-    # RETURNS: Dataframe containing the mean cross validation scores of each hyperparameter value
-    # TODO: Modularize param_grid values
+    """DESCRIPTION: Maximizes model accuracy based on tuning hyperparameters of each model (respective if statements)
     
-    # Logistic Regression model needs to optimize the "C" value (a value of model regularization)
-    # C: Regularization; penalty of wrongly classified examples
-    # Creates a simple ML pipeline that scales the data and applies LogisticRegression
+    ACTION: Loops over chosen hyperparemeters in a the scores_dict/param_grid dictionary
+    and appends the mean cross validation score of each hyperparameter to the scores_dict dictionary
+    
+    INPUTS: model - an input string, referencing the specific model that the function should run.
+            X_train - a dataframe object containing prediction features.
+            y_train - a series object containing target variables.
+    
+    RETURNS: Dataframe containing the mean cross validation scores of each hyperparameter value
+    
+    TODO: Modularize param_grid values
+    
+    Logistic Regression model needs to optimize the "C" value (a value of model regularization)
+    C: Regularization; penalty of wrongly classified examples
+    Creates a simple ML pipeline that scales the data and applies LogisticRegression
+    """
+    
     if model == 'lr':
         scores_dict = {
         "C": 10.0**np.arange(-4, 6, 1),
