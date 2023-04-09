@@ -19,7 +19,7 @@ cd dsci-310-group-11-pkg
 
 3. Run pip to install the package locally:
 ```
-$ pip install .
+pip install .
 ```
 
 You should now be able to import the package into relevant projects and notebooks.
