@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-import dsci_310_group_11_pkg.grapher
+from dsci_310_group_11_pkg.grapher import correlation_table, bar_chart, vis_tree, compare_scores, show_coefficients, show_correct
 import altair
 from matplotlib import pyplot as plt
 import pytest
@@ -8,7 +8,7 @@ from sklearn.dummy import DummyClassifier
 
 # dummy data
 
-dummy = pd.read_csv('data/winequality-red.csv', sep=',')[0:10]
+dummy = pd.read_csv('docs/data/winequality-red.csv', sep=',')[0:10]
 dummy_X = dummy.drop(columns = ['quality'])
 dummy_y = dummy['quality']
 pipe = DummyClassifier(strategy='most_frequent').fit(dummy_X, dummy_y)

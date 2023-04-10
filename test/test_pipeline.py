@@ -9,7 +9,7 @@ from sklearn.metrics import classification_report
 from sklearn.dummy import DummyClassifier
 from sklearn.naive_bayes import GaussianNB
 
-from src.pipeline import pipe_build
+from dsci_310_group_11_pkg.pipeline import pipe_build
 from sklearn.datasets import make_moons
 import pytest
 

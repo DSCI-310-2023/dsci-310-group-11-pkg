@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 from sklearn.datasets import make_moons
-from src.optimize import hp_optimizer
+from dsci_310_group_11_pkg.optimize import hp_optimizer
 import pytest
 
 

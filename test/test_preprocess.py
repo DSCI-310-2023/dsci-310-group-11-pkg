@@ -1,11 +1,11 @@
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from src.preprocess import preprocessor
+from dsci_310_group_11_pkg.preprocess import preprocessor
 import pytest
 
 #create dataset for test
-df = pd.read_csv('data/winequality-red.csv', sep=',')[0:10]
+df = pd.read_csv('docs/data/winequality-red.csv', sep=',')[0:10]
 train_fake, test_fake = train_test_split(df, test_size=0.30, random_state=123)
 train_fake['target'] = [0,1,1,0,0,0,0]
 test_fake['target'] = [0,0,1]
