@@ -30,9 +30,9 @@ jobs:
 
     - name: Install package
       run: poetry install
+    
     - name: Test with pytest
-      run: |
-        pytest
+      run: poetry run pytest test/ --cov=dsci_310_group_11_pkg --cov-report=xml
 
 
     - name: Use Codecov to track coverage
