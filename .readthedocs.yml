@@ -1,14 +1,8 @@
-# Required
 version: 2
-
-# Image to use
 build:
-  image: testing
-
-# Configuration
+  os: ubuntu-22.05
+  tools:
+    python: "3"
 python:
-  version: 3.10
   install:
-    - requirements: docs/requirements.txt
-    - method: pip
-      path: .
+    - requirements: doc/requirements.txt
