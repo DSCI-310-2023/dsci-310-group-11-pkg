@@ -5,6 +5,10 @@ split the data, generate pipeline for predictive models, conduct hyperparameter 
 
 The main difference between our package to other similar functions is that the functions in our package is designed to improve the efficiency for analyzing the wine data. Using our pipeline generator as example, while directly using functions in sklearns can generate the same model, we simplifies this process by integrating repetitive steps into our functions. 
 
+## Code Coverage Badge
+
+[![codecov](https://codecov.io/gh/DSCI-310/dsci-310-group-11-pkg/branch/main/graph/badge.svg?token=e9QSz5vHox)](https://codecov.io/gh/DSCI-310/dsci-310-group-11-pkg)
+
 ## Installation
 
 1. Clone the git repository onto your local machine using:
