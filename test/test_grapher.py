@@ -13,20 +13,29 @@ dummy_X = dummy.drop(columns = ['quality'])
 dummy_y = dummy['quality']
 pipe = DummyClassifier(strategy='most_frequent').fit(dummy_X, dummy_y)
 
+import json
+
+def is_json(json_string):
+    try:
+        json_object = json.loads(json_string)
+    except ValueError as e:
+        return False
+    return True
+
 # test whether the graphing function returns the correct types of Charts or output
 def test_correlation_table():
     # DESCRIPTION: Compare the type of chart returned by correlation_table is the expected type
-    # ACTION: use assert and == function to compare the type of chart
+    # ACTION: use is_json to compare the type of chart
     # RETURNS: return errors message if the type of chart is not the expected type, return none if the test pass
 
-    assert type(correlation_table(dummy)) == altair.vegalite.v4.api.Chart
+    assert is_json(correlation_table(dummy))
     
 def test_bar_chart():
     # DESCRIPTION: Compare the type of chart returned by bar_chart is the expected type
-    # ACTION: use assert and == function to compare the type of chart
+    # ACTION: use is_json to compare the type of chart
     # RETURNS: return errors message if the type of chart is not the expected type, return none if the test pass
     
-    assert type(bar_chart(dummy)) == altair.vegalite.v4.api.Chart
+    assert is_json(bar_chart(dummy))
     
 def test_vis_tree():
     # DESCRIPTION: Compare the type of chart returned by vis_tree is the expected type
@@ -38,10 +47,10 @@ def test_vis_tree():
     
 def test_compare_scores():
     # DESCRIPTION: Compare the type of chart returned by compare_scores is the expected type
-    # ACTION: use assert and == function to compare the type of chart
+    # ACTION: use is_json function to compare the type of chart
     # RETURNS: return errors message if the type of chart is not the expected type, return none if the test pass
     
-    assert type(compare_scores([1,2,3,4,5])) == altair.vegalite.v4.api.Chart
+    assert is_json(compare_scores([1,2,3,4,5]))
 
     
     
