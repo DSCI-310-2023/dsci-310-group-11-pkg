@@ -30,6 +30,8 @@ You should now be able to import the package into relevant projects and notebook
 
 ## Usage
 
+View full usage documentation at [Read The Docs](https://dsci-310-group11-pkg.readthedocs.io/en/latest/index.html).
+
 The most basic usage of this package is to split the data into training or testing data:
 
 ```python
