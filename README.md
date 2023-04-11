@@ -21,9 +21,9 @@ git clone https://github.com/DSCI-310/dsci-310-group-11-pkg.git
 cd dsci-310-group-11-pkg
 ```
 
-3. Run pip to install the package locally:
+3. Run pip to install the package locally (from Pypi[https://pypi.org/project/dsci-310-group-11-pkg/]:
 ```
-pip install .
+pip install dsci-310-group-11-pkg
 ```
 
 You should now be able to import the package into relevant projects and notebooks.
