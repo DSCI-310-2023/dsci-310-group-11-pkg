@@ -30,8 +30,6 @@ You should now be able to import the package into relevant projects and notebook
 
 ## Usage
 
-View full usage documentation at [Read The Docs](https://dsci-310-group11-pkg.readthedocs.io/en/latest/index.html).
-
 The most basic usage of this package is to split the data into training or testing data:
 
 ```python
@@ -73,7 +71,7 @@ from dsci_310_group_11_pkg.grapher import correlation_table
 
 ctb = correlation_table(df) # this generate the correlation table for dataframe df
 ```
-Other functions and more detailed usage can be found in docs/example or in the [website documentation of group 11 package](https://dsci-310-group11-pkg.readthedocs.io/en/latest/index.html) 
+Other functions and more detailed usage can be found in docs/example or in the [website documentation of the package](https://dsci-310-group11-pkg.readthedocs.io/en/latest/index.html).
 
 ## Contributing
 
