@@ -55,13 +55,13 @@ model = pipe_build(model_type, x, y)
 Another usage is to conduct hyperparameter tuning and return it as dataframe for different model as follows:
 
 ```python
-from dsci_310_group_11_pkg.optimizer import optimize
+from dsci_310_group_11_pkg.optimize import hy_optimizer
 
 x = X_training_data # training features data
 y = Y_training data # training label data
 model_name = 'lr' # types of model
 
-tuning_result = optimize(model_name, x, y)
+tuning_result = hp_optimize(model_name, x, y)
 ```
 
 This package can also be used to generate different graphs for the analysis report, for example: 
