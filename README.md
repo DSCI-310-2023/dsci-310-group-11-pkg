@@ -71,7 +71,7 @@ from dsci_310_group_11_pkg.grapher import correlation_table
 
 ctb = correlation_table(df) # this generate the correlation table for dataframe df
 ```
-Other functions and more detailed usage can be found in doc/example
+Other functions and more detailed usage can be found in docs/example or in the [website documentation of group 11 package](https://dsci-310-group11-pkg.readthedocs.io/en/latest/example.html) 
 
 ## Contributing
 
