@@ -21,7 +21,7 @@ git clone https://github.com/DSCI-310/dsci-310-group-11-pkg.git
 cd dsci-310-group-11-pkg
 ```
 
-3. Run pip to install the package locally (from [pypi](https://pypi.org/project/dsci-310-group-11-pkg/):
+3. Run pip to install the package locally (from [pypi](https://pypi.org/project/dsci-310-group-11-pkg/)):
 ```
 pip install dsci-310-group-11-pkg
 ```
